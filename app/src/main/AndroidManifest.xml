@@ -13,6 +13,27 @@
         android:theme="@style/Theme.FoodFitApp_pcortes"
         tools:targetApi="31">
         <activity
+            android:name=".activities_cena.ActivityCenaDomingo"
+            android:exported="false" />
+        <activity
+            android:name=".activities_cena.ActivityCenaSabado"
+            android:exported="false" />
+        <activity
+            android:name=".activities_cena.ActivityCenaViernes"
+            android:exported="false" />
+        <activity
+            android:name=".activities_cena.ActivityCenaJueves"
+            android:exported="false" />
+        <activity
+            android:name=".activities_cena.ActivityCenaMiercoles"
+            android:exported="false" />
+        <activity
+            android:name=".activities_cena.ActivityCenaMartes"
+            android:exported="false" />
+        <activity
+            android:name=".activities_cena.ActivityCenaLunes"
+            android:exported="false" />
+        <activity
             android:name=".activities_almuerzo.ActivityAlmuerzoDomingo"
             android:exported="false" />
         <activity
