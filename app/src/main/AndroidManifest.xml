@@ -13,6 +13,18 @@
         android:theme="@style/Theme.FoodFitApp_pcortes"
         tools:targetApi="31">
         <activity
+            android:name=".activities_almuerzo.ActivityAlmuerzoDomingo"
+            android:exported="false" />
+        <activity
+            android:name=".activities_almuerzo.ActivityAlmuerzoSabado"
+            android:exported="false" />
+        <activity
+            android:name=".activities_almuerzo.ActivityAlmuerzoViernes"
+            android:exported="false" />
+        <activity
+            android:name=".activities_almuerzo.ActivityAlmuerzoJueves"
+            android:exported="false" />
+        <activity
             android:name=".activities_almuerzo.ActivityAlmuerzoMiercoles"
             android:exported="false" />
         <activity
