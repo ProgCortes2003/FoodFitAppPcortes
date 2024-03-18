@@ -3,6 +3,7 @@ package com.example.foodfitapp_pcortes
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.app.AlertDialog
 import com.example.foodfitapp_pcortes.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
@@ -31,7 +32,25 @@ class MainActivity : AppCompatActivity() {
         binding.cardCalculadoraIMC.setOnClickListener {
             startActivity(Intent(this@MainActivity,CalculadoraImcActivity::class.java))
         }
+
+        binding.btnSalirApp.setOnClickListener {
+            onBackPressed()
         }
+        }
+
+    override fun onBackPressed(){
+        val dialogBuilder = AlertDialog.Builder(this)
+        dialogBuilder.setTitle("Cerrando aplicación...")
+        dialogBuilder.setMessage("¿Desear cerrar la app?")
+        dialogBuilder.setPositiveButton("Si"){
+                dialog, id -> finish()
+            super.onBackPressed()
+        }
+        dialogBuilder.setNegativeButton("No"){
+                dialog, id->dialog.cancel()
+        }
+        dialogBuilder.show()
+    }
 
 
 }

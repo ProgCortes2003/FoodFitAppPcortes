@@ -23,15 +23,22 @@ class CalculadoraImcActivity : AppCompatActivity() {
 
         binding.btnCalcularImc.setOnClickListener {
 
-            val altura = binding.datoAlturaEditText.text.toString().toDouble()
-            val peso = binding.datoPesoEditText.text.toString().toDouble()
+            if(binding.datoAlturaEditText.text.isNotEmpty() && binding.datoPesoEditText.text.isNotEmpty()){
+                val altura = (binding.datoAlturaEditText.text.toString().toDouble() / 100)
+                val peso = binding.datoPesoEditText.text.toString().toDouble()
 
-            if(altura > 0.0 && peso > 0.0){
-                val imc = calcularIMC(altura,peso)
-                binding.resultadoCalculadoraImc.text = "Tú índice de masa corporal es ${String.format("%0.2f", imc)} perteneces a la categoría de ${determinarResultadoIMC(imc)}"
+                if(altura > 0.0 && peso > 0.0){
+                    val imc = calcularIMC(altura,peso)
+                    binding.resultadoCalculadoraImc.text = "Tú índice de masa corporal es ${imc.toFloat()}.\n Tu resultado te hace pertenecer a la categoría de ${determinarResultadoIMC(imc)}"
+                }else{
+                    Toast.makeText(this,"Por favor ingresa valores válidos de peso y altura",Toast.LENGTH_LONG).show()
+                }
             }else{
-                Toast.makeText(this,"Por favor ingresa valores válidos de peso y altura",Toast.LENGTH_LONG).show()
+                Toast.makeText(this,"Rellena los campos, por favor.",Toast.LENGTH_LONG).show()
             }
+
+
+
         }
 
         binding.btnBorrarEditText.setOnClickListener {

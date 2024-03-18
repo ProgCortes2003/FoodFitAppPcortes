@@ -17,6 +17,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        android:backgroundTint="@color/red"
         android:background="@drawable/circular_button"
         app:layout_constraintVertical_bias="0.025"
         app:layout_constraintHorizontal_bias="0.025"
@@ -47,7 +48,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:text="Encuentra las mejores recetas para manterner una vida saludable a lo largo de todas las comidas del día."
-        app:layout_constraintVertical_bias="0.25"
+        app:layout_constraintVertical_bias="0.2"
+        android:textAlignment="center"
         ></TextView>
 
     <GridLayout
@@ -64,6 +66,7 @@
         android:layout_marginBottom="100dp"
         android:layout_marginHorizontal="40dp"
         android:orientation="horizontal"
+        android:background="@color/orange"
         >
         <androidx.cardview.widget.CardView
             android:id="@+id/card_comidaManiana"
@@ -80,12 +83,21 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center">
+
                     <ImageView
                         android:layout_width="100dp"
                         android:layout_height="100dp"
                         android:layout_centerInParent="true"
-                        android:src="@drawable/icono_maniana"
-                        ></ImageView>
+                        android:src="@drawable/icono_maniana"></ImageView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="115sp"
+                        android:text="Desayuno"
+                        android:layout_centerHorizontal="true"
+                        android:textSize="20sp"
+                        android:textStyle="bold"></TextView>
 
                 </RelativeLayout>
         </androidx.cardview.widget.CardView>
@@ -110,6 +122,15 @@
                     android:layout_centerInParent="true"
                     android:src="@drawable/icono_mediodia"
                     ></ImageView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Almuerzo"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="115sp"
+                    ></TextView>
             </RelativeLayout>
         </androidx.cardview.widget.CardView>
         <androidx.cardview.widget.CardView
@@ -127,12 +148,21 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center">
+
                 <ImageView
                     android:layout_width="100dp"
                     android:layout_height="100dp"
                     android:layout_centerInParent="true"
-                    android:src="@drawable/icono_noche"
-                    ></ImageView>
+                    android:src="@drawable/icono_noche"></ImageView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cena"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="115sp"
+                    ></TextView>
             </RelativeLayout>
         </androidx.cardview.widget.CardView>
         <androidx.cardview.widget.CardView
@@ -156,6 +186,15 @@
                     android:layout_centerInParent="true"
                     android:src="@drawable/icono_calculadora"
                     ></ImageView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Calculadora"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="115sp"
+                    ></TextView>
             </RelativeLayout>
 
         </androidx.cardview.widget.CardView>

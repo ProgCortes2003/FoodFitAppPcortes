@@ -18,6 +18,7 @@
         app:layout_constraintVertical_bias="0.025"
         android:text=""
         android:drawableLeft="@drawable/opcion_volver"
+        android:backgroundTint="@color/orange"
         ></Button>
 
     <TextView
@@ -72,48 +73,55 @@
             android:layout_height="0dp"
             android:layout_gravity="fill"
             android:text="@string/palabra_lunes"
-            android:layout_rowWeight="1"></Button>
+            android:layout_rowWeight="1"
+            android:backgroundTint="@color/orange"></Button>
         <Button
             android:id="@+id/btn_martes_almuerzo"
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:layout_gravity="fill"
             android:text="@string/palabra_martes"
-            android:layout_rowWeight="1"></Button>
+            android:layout_rowWeight="1"
+            android:backgroundTint="@color/orange"></Button>
         <Button
             android:id="@+id/btn_miercoles_almuerzo"
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:layout_gravity="fill"
             android:text="@string/palabra_miercoles"
-            android:layout_rowWeight="1"></Button>
+            android:layout_rowWeight="1"
+            android:backgroundTint="@color/orange"></Button>
         <Button
             android:id="@+id/btn_jueves_almuerzo"
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:layout_gravity="fill"
             android:text="@string/palabra_jueves"
-            android:layout_rowWeight="1"></Button>
+            android:layout_rowWeight="1"
+            android:backgroundTint="@color/orange"></Button>
         <Button
             android:id="@+id/btn_viernes_almuerzo"
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:layout_gravity="fill"
             android:text="@string/palabra_viernes"
-            android:layout_rowWeight="1"></Button>
+            android:layout_rowWeight="1"
+            android:backgroundTint="@color/orange"></Button>
         <Button
             android:id="@+id/btn_sabado_almuerzo"
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:layout_gravity="fill"
             android:text="@string/palabra_sabado"
-            android:layout_rowWeight="1"></Button>
+            android:layout_rowWeight="1"
+            android:backgroundTint="@color/orange"></Button>
         <Button
             android:id="@+id/btn_domingo_almuerzo"
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:layout_gravity="fill"
             android:text="@string/palabra_domingo"
-            android:layout_rowWeight="1"></Button>
+            android:layout_rowWeight="1"
+            android:backgroundTint="@color/orange"></Button>
     </GridLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
