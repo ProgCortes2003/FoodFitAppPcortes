@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".activities_desayuno.ActivityDesayunoMartes"
     android:layout_gravity="center"
+    android:background="@color/white"
     android:orientation="vertical">
     <Button
         android:id="@+id/btn_desayuno_martes_volver"
