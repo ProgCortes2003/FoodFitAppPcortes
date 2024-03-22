@@ -17,5 +17,9 @@ class ActivityAlmuerzoDomingo : AppCompatActivity() {
         binding.btnAlmuerzoDomingoVolver.setOnClickListener {
             startActivity(Intent(this@ActivityAlmuerzoDomingo, ComidaMediodiaActivity::class.java))
         }
+
+        val embebidoVideo = "<iframe width=\"100%\" height=\"100%\" src=\"https://www.youtube.com/embed/fVRzpIMQliw?si=mTcWRcEGe8soIbHV\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen></iframe>"
+        binding.videoAlmuerzoDomingo.loadData(embebidoVideo,"text/html","utf-8")
+        binding.videoAlmuerzoDomingo.settings.javaScriptEnabled = true
     }
 }

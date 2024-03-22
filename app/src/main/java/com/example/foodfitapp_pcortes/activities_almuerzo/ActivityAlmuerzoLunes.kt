@@ -20,5 +20,12 @@ class ActivityAlmuerzoLunes : AppCompatActivity() {
             finish()
             startActivity(Intent(this@ActivityAlmuerzoLunes, ComidaMediodiaActivity::class.java))
         }
+
+        val embebidoVideo = "<iframe width=\"100%\" height=\"100%\" src=\"https://www.youtube.com/embed/pe7VStTN3Io?si=P5GkKQ0QZea8MxOZ\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" allowfullscreen></iframe>"
+        binding.videoAlmuerzoLunes.loadData(embebidoVideo,"text/html","utf-8")
+        binding.videoAlmuerzoLunes.settings.javaScriptEnabled = true
+
     }
+
+
 }
